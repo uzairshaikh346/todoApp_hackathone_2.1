@@ -1,22 +1,10 @@
-# Simple CLI Todo App
-
-A simple command-line interface (CLI) based Todo application that runs in the terminal and manages tasks without external dependencies.
-
-## Features
-
-- Add new tasks
-- List all tasks with completion status
-- Mark tasks as complete/incomplete
-- Update task titles
-- Delete tasks
+# Quickstart Guide: Simple CLI Todo App
 
 ## Prerequisites
-
 - Python 3.13+ installed on your system
 - Basic command line knowledge
 
 ## Installation
-
 1. Clone the repository:
    ```bash
    git clone <repository-url>
@@ -88,12 +76,9 @@ python -m pytest tests/
 python main.py [command] [arguments]
 ```
 
-## Architecture
-
-The application follows a clean architecture pattern with separation of concerns:
-
-- `src/models/` - Data models (Task model)
-- `src/services/` - Business logic (TodoService)
-- `src/ui/` - User interface (CLI interface)
-- `main.py` - Entry point and command parsing
-- `tests/` - Unit and integration tests
+## Project Structure
+- `src/models/task.py` - Task data model
+- `src/services/todo_service.py` - Business logic for todo operations
+- `src/ui/cli.py` - CLI interface and user interaction
+- `main.py` - Entry point for the application
+- `tests/` - Test files

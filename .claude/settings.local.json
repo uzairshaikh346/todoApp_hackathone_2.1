@@ -1,20 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python -m pytest tests/unit/test_project_setup.py -v)",
-      "Bash(uv pip install -e .)",
-      "Bash(uv venv)",
-      "Bash(source .venv/Scripts/activate)",
-      "Bash(uv pip install pytest pytest-cov pylint)",
-      "Bash(python -m pytest tests/unit/test_task_service.py -v)",
-      "Bash(python -c \"from src.models.task import Task; from src.services.task_service import TaskService; from src.ui.todo_cli import TodoCLI; print(''All modules import successfully'')\")",
-      "Bash(timeout 10s python src/main.py)",
-      "Bash(timeout 10s python -m src.main)",
-      "Bash(pylint src/)",
-      "Bash(findstr /n \"^.\\{101,\\}\" \"C:\\CODE\\todo_app_hackathone\\src\\ui\\todo_cli.py\")",
-      "Bash(pylint src/ --disable=C0305,R0911,R0912)",
-      "Bash(pylint src/ --disable=R0911,R0912,R0915)",
-      "Bash(python -m pytest tests/ -v)"
+      "Bash(python main.py)",
+      "Bash(python main.py add \"Test task\")",
+      "Bash(python main.py list)",
+      "Bash(python main.py add \"Third task\")"
     ]
   }
 }
